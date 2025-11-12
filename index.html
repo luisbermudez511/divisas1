@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Simulador de Prestamos</h1>
+        <p>Calcula tu pago mensual</p>
+
+    </header>
+
+    <main class="container">
+        <section class="formulario">
+            <form id="forma">
+            <label for="monto">Monto De Pesos Méxicanos</label>
+            <input type="number" id="monto" placeholder="Ejem: 100" required>
+            <label for="monedaEx">Moneda Extranjera</label>
+            <select  id="moneda">
+            <option value="1">Euros</option>
+            <option value="2">Dollar</option>
+            <option value="3">Won surcoreano</option>
+            <option value="4">Libra Esterlinas</option>
+        </select>
+            <input type="submit" value="convertir">
+        </form>
+        
+        <article class="resultado">
+            <h2>Converisón de Moneda</h2>
+            <p id="resumen"></p>
+        </article>
+        </section>
+        
+         
+    </main>
+
+
+    <script src="js/javaS.js"></script>
+</body>
+</html>

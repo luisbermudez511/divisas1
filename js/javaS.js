@@ -49,10 +49,7 @@ document.getElementById('forma').addEventListener("submit", function(e) {
     e.preventDefault();
     const monto = parseFloat(document.getElementById('monto').value);
     const paisM = document.getElementById('moneda').value; 
-    if (isNaN(monto) || monto <= 0) {
-        document.getElementById('resumen').innerHTML = '<p style="color: red;">Error: Por favor, ingrese un monto válido mayor a cero.</p>';
-        return; 
-    }
     const objConver = new Conversion(monto, paisM); 
     document.getElementById('resumen').innerHTML = objConver.generarResumen(); 
+
 });
